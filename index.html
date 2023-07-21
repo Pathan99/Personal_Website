@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6fb9d2597.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>              
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Brac University</p>
+            <h1>Hi, I'm <span>Tanjimur Rafid Hossain Pathan</span><br>From Bangladesh</h1>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------About---------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A well prepared individual who communicates confidentlyand successfully in any respect degrees.
+                   Demonstrates initiative both indepedently and in group work. 
+                   Able to create ideas to clear up troubles through alternative way, 
+                   self-motivated,constructive with good interpersonal and communication ability.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link">Education</p>
+                   </div>
+                   <div class="tab-contents">
+                    <ul>
+                        <li><span>2017-2023</span><br>Brac University</li>
+                        <li><span>2014-2016</span><br>Imperial College</li>
+                        <li><span>2011-2014</span><br>Ideal School & College</li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------Services-------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Travelling</h2>
+                <p>Experienced and adventurous Traveller with a passion for exploring the world's diverse cultures, landscapes, and historical treasures. 
+                   Armed with an insatiable curiosity and an open mind, I have embarked on numerous expeditions to discover hidden gems and iconic landmarks alike.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Photography</h2>
+                <p>Passionate and highly skilled Nature Photographer with a deep appreciation for the beauty and diversity of the natural world.
+                   Known for capturing breathtaking moments in landscapes, wildlife, and environmental subjects. 
+                   Proficient in utilizing advanced photography techniques and equipment to produce compelling visual narratives. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tablet-button"></i>
+                <h2>Gaming</h2>
+                <p>Passionate and dedicated Gamer with a deep-rooted love for interactive entertainment and cutting-edge technologies. 
+                   An ardent enthusiast with a keen eye for emerging trends and industry advancements. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------Portfolio---------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Travel Shots</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Sky.jpg">
+                <h3>Sky</h3>
+                <p>"Don't tell me the sky's the limit when there are footprints on the moon" <br>-Paul Brandt</p>
+            </div>
+            <div class="work">
+                <img src="Images/Village.jpg">
+                <h3>Country-Side</h3>
+                <p>"There is something infinitely healing in the repeated refrains of nature - 
+                    the assurance that dawn comes after night, and spring after winter."
+                    - Rachel Carson</p>
+            </div>
+            <div class="work">
+                <img src="Images/Flame.jpg">
+                <h3>Fire</h3>
+                <p>"The fire you kindle for your enemy often burns yourself more than them." - Chinese Proverb</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------Contact----------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>tanjimur.rafid647433@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+8801623461641</p>
+            <br>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tanjimur.rafid"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/TanjimurRafid"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/tanjimurrafid"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tanjimur-rafid-134027196/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1ZaBTvCAuU6vkasgrDCVu_s9ZEqgdHPmV/view?usp=drive_link">
+                <input type="button" value="Download CV"></a>
+                <a href="https://docs.google.com/document/d/1ebb48UnBhltkWZ1ffr_X4sPDhuznWvJi/edit?usp=drive_link&ouid=107876604920211716335&rtpof=true&sd=true">
+                    <input type="button" value="Assignment"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Made by Pathan</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+    
+
+    </script>
+
+</body>
+</html>
